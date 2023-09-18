@@ -1,0 +1,25 @@
+Overview of the analysis: 
+	The purpose of this analysis is to determine what factors will lead to a successful funding by Alphabet soup.
+
+Results: Using bulleted lists and images to support your answers, address the following questions:
+	Data Preprocessing
+		What variable(s) are the target(s) for your model?
+			I used IS_SUCCESSFUL as the target of my models.
+		What variable(s) are the features for your model?
+			IS_SUCCESSFUL is never a feature for my models because it is the target. Depending on how I am testing my model, any columns not removed from the input data are considered features for my model.
+		What variable(s) should be removed from the input data because they are neither targets nor features?
+			For different models, I removed a variety of combinations from EIN, NAME, STATUS, and SPECIAL_CONSIDERATIONS, as I had believe that they were neither targets nor features.
+	Compiling, Training, and Evaluating the Model
+		How many neurons, layers, and activation functions did you select for your neural network model, and why?
+			I started with all relu activation functions as it is faster and avoids vanishing gradients problem. I tried adding in sigmoid in my other attempts for optimization.
+			I started with the usual two layers and increased to three layers in my attempts for optimization
+			I started with 80 and 30 neurons as that is what was shown in the Jupyter Notebook and decreased the numbers in my attempts for optimization.
+		Were you able to achieve the target model performance?
+			I was not able to achieve the target model performance.
+		What steps did you take in your attempts to increase model performance?
+			I tried dropping more OR fewer columns.
+			I tried binning different columns, creating more OR fewer bins.
+			I tried adding more OR fewer neurons.
+			I tried adding a third hidden layer.
+			I tried different activation functions (relu and sigmoid)
+			I tried reducing the number of epochs to the training regimen. 
